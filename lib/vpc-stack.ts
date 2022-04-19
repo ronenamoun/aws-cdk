@@ -9,7 +9,7 @@ export class VpcStack extends Stack {
 
     constructor(scope: App, id: string, props?: StackProps) {
         super(scope, id, props);
-
+        //test
         //Place resource definitions here.
         this.vpc = new Vpc(this, 'CustomVPC', {
             cidr: '10.0.0.0/16',
